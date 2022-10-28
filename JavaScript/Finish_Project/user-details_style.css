@@ -1,0 +1,29 @@
+/*user-details.html - блок с информацией про user вверху страницы. Кнопка ниже, на 90% ширины страницы, по центру.
+блоки с краткой информацией про post - в ряд по 5 объектов.*/
+
+.user-details {
+    background: silver;
+}
+
+.postsContainer {
+    background: coral;
+}
+
+.postsDetailButton {
+    width: 90%;
+    margin: 5px auto;
+    display: block;
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post {
+    background: #7eb6bf;
+    margin: 3px;
+    width: 100px;
+    margin-left: calc(10% - 50px);
+    margin-right: calc(10% - 50px);
+}

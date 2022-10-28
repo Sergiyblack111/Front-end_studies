@@ -1,0 +1,18 @@
+/*index.html - все блоки с user - по 2 в ряд. кнопки/ссылки находяться под информацией про user.*/
+
+.users {
+    display: flex;
+    flex-wrap: wrap ;
+}
+
+.user {
+    background: silver;
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    margin-left: calc(25% - 100px);
+    margin-right: calc(25% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Annotating Wireframes</title>
+    <style>
+
+      .mainContainer {
+        width: 820px;
+        height: min-content;
+        display: block;
+      }
+
+      .container1 {
+        background: darkgray;
+        width: 800px;
+        height: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border: 5px solid black;
+      }
+
+      .boxes1 {
+        background: darkgoldenrod;
+        width: 10%;
+        height: 30%;
+        margin-left: 10px;
+        margin-right: 10px
+      }
+
+      .containerFor2_3_4_5_6_7_Containers {
+        width: 805px;
+        height: min-content;
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        border: 5px solid black;
+        border-top: 0;
+        border-left: 0;
+        border-bottom: 0;
+      }
+
+      .containerFor_3_4_ {
+        width: 780px;
+        height: min-content;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .container2 {
+        background: darkgray;
+        width: 100px;
+        height: 1000px;
+        border: 5px solid black;
+        border-top: 0;
+        display: flex; /*розєднав блоки*/
+        justify-content: flex-start; /*виставив елементи від початку перпендикулярної*/
+        flex-direction: column; /*елементи в колонку*/
+        align-items: center; /*елементи по центру горизонт*/
+
+      }
+
+      .boxes2 {
+        background: darkgoldenrod;
+        width: 80%;
+        height: 8px;
+        margin: 10px 5px 5px 5px;
+      }
+
+      .container3 {
+        background: darkgray;
+        width: 695px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid black;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+      }
+
+      .box3 {
+        background: darkgoldenrod;
+        width: 50%;
+        height: 50%;
+      }
+
+      .container4 {
+        background: darkgray;
+        width: 695px;
+        height: 100px;
+        display: flex; /*розєднав блоки*/
+        justify-content: space-around; /*рівномірно роздати блоки по горизонталі з єдиними відступами*/
+        flex-direction: row; /*елементи в колонку*/
+        align-items: center; /*елементи по центру горизонт*/
+        border: 5px solid black;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+
+      }
+
+      .boxes4 {
+        background: darkgoldenrod;
+        width: 40px;
+        height: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+
+      .container_5_6 {
+        background: darkgray;
+        width: 700px;
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        border: 5px solid black;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+      }
+
+      .container_for_boxes_5_general {
+        width: 500px;
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .container_for_boxes_5_left {
+        background: darkgray;
+        width: 255px;
+        display: flex;
+        flex-direction: column; /*елементи в колонку*/
+        justify-content: space-around; /*роздав елементи рівномірно по ширині з єдиними відступами*/
+        align-items: center; /*елементи по центру горизонт*/
+      }
+
+      .container_for_boxes_5_right {
+        background: darkgray;
+        width: 255px;
+        display: flex;
+        flex-direction: column; /*елементи в колонку*/
+        justify-content: space-around; /*роздав елементи рівномірно по ширині з єдиними відступами*/
+        align-items: center; /*елементи по центру горизонт*/
+      }
+
+      .boxes5 {
+        background: darkgoldenrod;
+        width: 100px;
+        height: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+
+      .container_6 {
+        background: darkgray;
+        width: 500px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        border: 5px solid black;
+        border-top: 0;
+      }
+
+      .boxes6 {
+        background: darkgoldenrod;
+        width: 70px;
+        height: 50px;
+        margin-top: 10px;
+      }
+
+      .container_for_5and6_generals_box+7 {
+        width: min-content;
+        height: min-content;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .container_7 {
+        background: darkgray;
+        width: 695px;
+        height: 85px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        border: 5px solid black;
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+      }
+
+      .long_block {
+        background: darkgoldenrod;
+        width: 80%;
+        height: 20%;
+      }
+
+      .short_block {
+        background: darkgoldenrod;
+        width: 40%;
+        height: 20%;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+
+<div class="mainContainer">
+  <div class="container1">
+    <div class="boxes1"></div>
+    <div class="boxes1"></div>
+  </div>
+
+
+  <div class="containerFor2_3_4_5_6_7_Containers">
+    <div class="containerFor2+boxes2">
+      <div class="container2">
+        <div class="boxes2"></div>
+        <div class="boxes2"></div>
+        <div class="boxes2"></div>
+        <div class="boxes2"></div>
+        <div class="boxes2"></div>
+        <div class="boxes2"></div>
+      </div> <!--container2-->
+    </div> <!--containerFor2+boxes2-->
+
+
+    <div class="container_for_3_4_5_6_7">
+      <div class="containerFor_3_4_">
+        <div class="container3">
+          <div class="box3"></div>
+        </div> <!--container3-->
+
+        <div class="container4">
+          <div class="boxes4"></div>
+          <div class="boxes4"></div>
+          <div class="boxes4"></div>
+          <div class="boxes4"></div>
+        </div> <!--container4-->
+      </div> <!--containerFor_3_4_-->
+
+      <div class="container_for_5and6_generals_box+7">
+        <div class="container_5_6">
+          <div class="container_for_boxes_5_general">
+            <div class="container_for_boxes_5_left">
+              <div class="boxes5"></div>
+              <div class="boxes5"></div>
+              <div class="boxes5"></div>
+              <div class="boxes5"></div>
+              <div class="boxes5"></div>
+              <div class="boxes5"></div>
+            </div> <!--container_for_boxes_5_left-->
+
+            <div class="container_for_boxes_5_right">
+              <div class="boxes5"></div>
+              <div class="boxes5"></div>
+              <div class="boxes5"></div>
+              <div class="boxes5"></div>
+              <div class="boxes5"></div>
+              <div class="boxes5"></div>
+            </div>  <!--container_for_boxes_5_right-->
+          </div> <!--container_for_boxes_5_general-->
+
+          <div class="container_6">
+            <div class="boxes6"></div>
+            <div class="boxes6"></div>
+            <div class="boxes6"></div>
+            <div class="boxes6"></div>
+          </div> <!--container_6-->
+        </div> <!--container_5_6-->
+
+        <div class="container_7">
+          <div class="long_block"></div>
+          <div class="short_block"></div>
+        </div> <!--container_7-->
+      </div> <!--container_for_5and6_generals_box-->
+    </div> <!--container_for_3_4_5_6_7-->
+  </div> <!--containerFor2_3_4_5_6_7_Containers-->
+</div> <!--mainContainer-->
+
+
+  </body>
+</html>

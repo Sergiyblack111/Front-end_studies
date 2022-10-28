@@ -1,0 +1,104 @@
+
+.bgrGray {
+    background-color: gray;
+}
+
+.colRed {
+    color: red;
+}
+
+.colWhite {
+    color: white;
+}
+
+.wid350 {
+    width: 350px;
+}
+
+.wid325 {
+    width: 325px;
+}
+
+.wid425 {
+    width: 425px;
+}
+
+.wid600 {
+    width: 600px;
+}
+
+.wid1000 {
+    width: 1000px;
+}
+
+.wid930 {
+    width: 930px;
+}
+
+.wid1261 {
+    width: 1261px;
+}
+
+.hei100 {
+    height: 100px;
+}
+
+.hei200 {
+    height: 200px ;
+}
+
+.hei800 {
+    height: 800px;
+}
+
+.hei805 {
+    height: 805px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.pCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mrg0 {
+    margin: 0;
+}
+
+.mrgR5 {
+    margin-right: 5px;
+}
+
+.mrgT_R5 {
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+.mrgT5 {
+    margin-top: 5px;
+}
+
+.mrgB5 {
+    margin-bottom: 5px;
+}
+
+.mrgL2 {
+    margin-left: 2px;
+}
+
+.fntFam {
+    font-family: fantasy;
+}
